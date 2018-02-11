@@ -1,10 +1,10 @@
 {
   "name": "react-doc-creator",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Generate documentation for React Components based on its PropTypes",
   "main": "lib/index.js",
   "bin": {
-    "react-doc-generator": "lib/index.js"
+    "react-doc-creator": "lib/index.js"
   },
   "scripts": {
     "start": "lib/index.js",
@@ -15,7 +15,17 @@
     "name": "Octavio Coria",
     "email": "hi@octaviocoria.com"
   },
+  "repository": "github:crearlink/react-doc-creator",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "markdown",
+    "documentation",
+    "generator",
+    "docgen",
+    "list of components",
+    "components"
+  ],
   "dependencies": {
     "cli-table": "^0.3.1",
     "colors": "^1.1.2",
