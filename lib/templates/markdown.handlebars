@@ -7,15 +7,15 @@
 
 {{#each components}}
 
-### {{title}}
+## {{title}}
 
 {{{description}}}
 
 {{#if props}}
-Property | Type | Required | Default value | Description
-:--- | :--- | :--- | :--- | :---
+Property | Type | Default value | Description
+:--- | :--- | :--- | :---
 {{#each props}}
-{{@key}}|{{type.name}}|{{#if required}}yes{{else}}no{{/if}}|{{defaultValue.value}}|{{description}}
+`{{@key}}`|{{type.name}}|{{#if required}}**required**{{else}}{{defaultValue.value}}{{/if}}|{{description}}
 {{/each}}
 {{/if}}
 
