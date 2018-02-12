@@ -27,3 +27,18 @@ It will search for React Components in your `src` folder and write the documenta
 ## Demo
 
 * [React Strip Date Picker Documentation](https://github.com/crearlink/react-strip-date-picker/blob/develop/DOCUMENTATION.md)
+
+## Options
+
+```
+react-doc-creator [path] ...[options]
+
+path     A component file or directory. Default: src
+
+Options:
+   -o FILE, --out FILE   store extracted information in FILE
+   -x, --extension       File extensions to consider. Repeat to define multiple extensions. Default:  [js,jsx]
+   -e, --exclude         Filename pattern to exclude. Default:  []
+   -i, --ignore          Folders to ignore. Default:  [node_modules,__tests__,__mocks__]
+   -t, --title [value]   Document title. Default: 'React Components'
+```
