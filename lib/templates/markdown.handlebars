@@ -1,16 +1,9 @@
 {{#if documentTitle}}
-{{documentTitle}}
-----------
+# {{documentTitle}}
 {{/if}}
-
-{{#each files}}
-
 {{#each components}}
-
 ## {{title}}
-
 {{{description}}}
-
 {{#if props}}
 Property | Type | Default value | Description
 :--- | :--- | :--- | :---
@@ -18,11 +11,7 @@ Property | Type | Default value | Description
 `{{name}}`|{{type}}|{{#if required}}_required_{{else}}{{default}}{{/if}}|{{description}}
 {{/each}}
 {{/if}}
-
-<sub>Source: **{{../filename}}**</sub>
-
-{{/each}}
+<sub>Source: **{{filename}}**</sub>
 -----
 {{/each}}
-
 <sub>{{generator}}</sub>
