@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-
+/**
+ * PropTypes example took from https://reactjs.org/docs/typechecking-with-proptypes.html
+ */
 export class MyComponent extends React.Component {
 
   render() {
@@ -28,10 +30,10 @@ MyComponent.propTypes = {
   /** A React element. */
   optionalElement: PropTypes.element,
 
-  /** You can also declare that a prop is an instance of a class. This uses JS's instanceof operator.*/
+  /** You can also declare that a prop is an instance of a class. This uses JS's instanceof operator. */
   optionalMessage: PropTypes.instanceOf(Promise),
 
-  /** You can ensure that your prop is limited to specific values by treating it as an enum.*/
+  /** You can ensure that your prop is limited to specific values by treating it as an enum. */
   optionalEnum: PropTypes.oneOf(['News', 'Photos']),
 
   /** An object that could be one of many types */
@@ -41,23 +43,22 @@ MyComponent.propTypes = {
     PropTypes.instanceOf(Promise)
   ]),
 
-  // An array of a certain type
+  /** An array of a certain type */
   optionalArrayOf: PropTypes.arrayOf(PropTypes.number),
 
-  // An object with property values of a certain type
+  /** An object with property values of a certain type */
   optionalObjectOf: PropTypes.objectOf(PropTypes.number),
 
-  // An object taking on a particular shape
+  /** An object taking on a particular shape */
   optionalObjectWithShape: PropTypes.shape({
     color: PropTypes.string,
     fontSize: PropTypes.number
   }),
 
-  // You can chain any of the above with `isRequired` to make sure a warning
-  // is shown if the prop isn't provided.
+  /** You can chain any of the above with `isRequired` to make sure a warning is shown if the prop isn't provided. */
   requiredFunc: PropTypes.func.isRequired,
 
-  // A value of any data type
+  /** A value of any data type */
   requiredAny: PropTypes.any.isRequired,
 
   // You can also specify a custom validator. It should return an Error
