@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "lib/index.js",
-    "test": "jest lib/*.test.js",
+    "test": "jest test/*.test.js",
+    "build:doc": "./lib/index ../test --out DOCUMENTATION.md",
     "lint": "eslint lib"
   },
   "author": {
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "eslint": "4.19.0",
-    "jest-cli": "23.0.0-alpha.0"
+    "jest-cli": "23.0.0-alpha.0",
+    "react": "16.2.0"
   }
 }
