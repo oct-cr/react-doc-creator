@@ -1,6 +1,6 @@
 {
   "name": "react-doc-creator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Generate documentation for React Components based on its PropTypes",
   "main": "lib/index.js",
   "bin": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "lib/index.js",
-    "test": "jest lib/*.test.js",
+    "test": "jest test/*.test.js",
+    "build:doc": "./lib/index ../test --out DOCUMENTATION.md",
     "lint": "eslint lib"
   },
   "author": {
@@ -27,15 +28,16 @@
     "components"
   ],
   "dependencies": {
-    "cli-table": "^0.3.1",
-    "colors": "^1.1.2",
+    "cli-table": "0.3.1",
+    "colors": "1.2.1",
     "commander": "2.14.1",
-    "handlebars": "^4.0.6",
-    "node-dir": "^0.1.16",
-    "react-docgen": "^2.13.0"
+    "handlebars": "4.0.11",
+    "node-dir": "0.1.17",
+    "react-docgen": "2.20.1"
   },
   "devDependencies": {
-    "eslint": "^4.17.0",
-    "jest-cli": "^22.2.2"
+    "eslint": "4.19.0",
+    "jest-cli": "23.0.0-alpha.0",
+    "react": "16.2.0"
   }
 }
