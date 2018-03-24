@@ -6,6 +6,10 @@ module.exports = {
     "node": true,
     "es6": true
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+  },
   "rules": {
     // Possible Errors
     "no-console": "off",
@@ -37,7 +41,7 @@ module.exports = {
     "comma-spacing": "warn",
     "eol-last": "warn",
     "func-call-spacing": "warn",
-    "indent": ["warn", 2],
+    "indent": [2, 2, { "SwitchCase": 1 }],
     "key-spacing": "warn",
     "keyword-spacing": "warn",
     "linebreak-style": ["warn", "unix"],

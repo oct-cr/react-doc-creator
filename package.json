@@ -1,6 +1,6 @@
 {
   "name": "react-doc-creator",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Generate documentation for React Components based on its PropTypes",
   "main": "lib/index.js",
   "bin": {
@@ -9,7 +9,7 @@
   "scripts": {
     "start": "lib/index.js",
     "test": "jest test/*.test.js",
-    "build:doc": "./lib/index ../test --out DOCUMENTATION.md",
+    "build:doc": "./lib/index.js test --out SAMPLE-DOCUMENTATION.md --title 'React PropTypes Example'",
     "lint": "eslint lib"
   },
   "author": {
