@@ -6,7 +6,7 @@ Output sample: [React Strip Date Picker Documentation](https://github.com/crearl
 
 ## Installation
 
-`$ npm install -save-dev react-doc-creator`
+`$ npm install --save-dev react-doc-creator`
 
 ## Usage
 
@@ -37,12 +37,12 @@ It will search for React Components in your `src` folder and write the documenta
 ```
 react-doc-creator [path] ...[options]
 
-path     A component file or directory. Default: src
+  path     A component file or directory. Default: src
 
-Options:
-   -o FILE, --out FILE   Target markdown file. Default: COMPONENTS.md
-   -x, --extension       File extensions to consider. Repeat to define multiple extensions. Default:  [js,jsx]
-   -e, --exclude         Filename pattern to exclude. Default:  none
-   -i, --ignore          Folders to ignore. Default:  [node_modules,__tests__,__mocks__]
-   -t, --title [value]   Document title. Default: 'React Components'
+  Options:
+    -o, --out <file>         Target markdown file. (default: COMPONENTS.md)
+    -x, --extension <items>  Include only these file extensions. (default: js,jsx)
+    -i, --ignore <items>     Folders to ignore. (default: node_modules,__tests__,__mocks__)
+    -e, --exclude [regexp]   Filename pattern to exclude.
+    -t, --title [value]      Document title. (default: React Components)
 ```
