@@ -30,4 +30,4 @@ Property | Type | Default value | Description
 
 -----
 
-<sub>Documentation generated using **React Doc Creator v0.0.6**</sub>
+<sub>Documentation generated using **React Doc Creator v0.0.7**</sub>
