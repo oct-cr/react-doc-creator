@@ -30,6 +30,7 @@ It will search for React Components in your `src` folder and write the documenta
 
 ## Demo
 
+* [React PropTypes Example](https://github.com/crearlink/react-doc-creator/blob/develop/SAMPLE-DOCUMENTATION.md)
 * [React Strip Date Picker Documentation](https://github.com/crearlink/react-strip-date-picker/blob/develop/DOCUMENTATION.md)
 
 ## Options
@@ -46,3 +47,18 @@ react-doc-creator [path] ...[options]
     -e, --exclude [regexp]   Filename pattern to exclude.
     -t, --title [value]      Document title. (default: React Components)
 ```
+
+## Use Examples
+
+### Exclude specific file
+`react-doc-creator src --exclude demo\.jsx`
+
+_Period (`.`) must be escaped since the `exclude` option works with RegExp._
+
+### Ignore directories
+`react-doc-creator src --ignore tests,utils`
+
+_**Warning:** Avoid spaces between directory names._
+
+### Set custom title
+`react-doc-creator src --title 'Project shared components'`
