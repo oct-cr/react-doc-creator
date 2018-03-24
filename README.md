@@ -50,6 +50,8 @@ react-doc-creator [path] ...[options]
 
 ## Use Examples
 
+The options should be added to the `package.json` script.
+
 ### Exclude specific file
 `react-doc-creator src --exclude demo\.jsx`
 
