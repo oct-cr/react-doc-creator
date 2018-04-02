@@ -16,7 +16,7 @@ Property | Type | Default value | Description
 `optionalNode`|node||Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types.
 `optionalElement`|element||A React element.
 `optionalMessage`|&lt;Promise&gt;||You can also declare that a prop is an instance of a class. This uses JS&#x27;s instanceof operator.
-`optionalEnum`|enum||You can ensure that your prop is limited to specific values by treating it as an enum.
+`optionalEnum`|&#x27;News&#x27; \| &#x27;Photos&#x27;||You can ensure that your prop is limited to specific values by treating it as an enum.
 `optionalUnion`|string \| number \| Promise||An object that could be one of many types
 `optionalArrayOf`|&lt;number&gt;[]||An array of a certain type
 `optionalObjectOf`|objectOf||An object with property values of a certain type
