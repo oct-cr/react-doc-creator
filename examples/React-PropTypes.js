@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+
 /**
- * PropTypes example took from https://reactjs.org/docs/typechecking-with-proptypes.html
+ * This is how the React PropTypes Example https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes is rendered:
  */
 export class MyComponent extends React.Component {
 
