@@ -2,7 +2,7 @@
 
 ## MyComponent
 
-PropTypes example took from https://reactjs.org/docs/typechecking-with-proptypes.html
+This is how the React PropTypes Example https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes is rendered:
 
 Property | Type | Default value | Description
 :--- | :--- | :--- | :---
@@ -26,7 +26,7 @@ Property | Type | Default value | Description
 `customProp`|custom||
 `customArrayProp`|&lt;custom&gt;[]||
 
-<sub>Source: **test/sample.js**</sub>
+<sub>Source: **examples/React-PropTypes.js**</sub>
 
 -----
 

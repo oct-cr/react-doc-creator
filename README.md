@@ -1,8 +1,12 @@
-Generate documentation for React Components based on its PropTypes
+Create documentation for your React projects in a easy way using regular PropTypes declarations.
+
+Share the documentation in the project repository.
+
+## Demo
+
+* [React PropTypes Example](https://github.com/crearlink/react-doc-creator/blob/develop/examples/REACT-PROPTYPES.md)
 
 It parses the files using React Docgen. Please refer to [its documentation](https://github.com/reactjs/react-docgen#guidelines-for-default-resolvers-and-handlers) for details.
-
-Output sample: [React Strip Date Picker Documentation](https://github.com/crearlink/react-strip-date-picker/blob/develop/DOCUMENTATION.md)
 
 ## Installation
 
@@ -27,11 +31,6 @@ To run it:
 `$ npm run build:doc`
 
 It will search for React Components in your `src` folder and write the documentation in a `COMPONENTS.md` file
-
-## Demo
-
-* [React PropTypes Example](https://github.com/crearlink/react-doc-creator/blob/develop/SAMPLE-DOCUMENTATION.md)
-* [React Strip Date Picker Documentation](https://github.com/crearlink/react-strip-date-picker/blob/develop/DOCUMENTATION.md)
 
 ## Options
 
