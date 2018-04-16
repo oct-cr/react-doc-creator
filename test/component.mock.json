@@ -1,0 +1,186 @@
+[
+  {
+    "description": "PropTypes example took from https://reactjs.org/docs/typechecking-with-proptypes.html",
+    "displayName": "MyComponent",
+    "methods": [],
+    "props": {
+      "optionalArray": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "optionalBool": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "optionalFunc": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "optionalNumber": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "optionalObject": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "optionalString": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "optionalSymbol": {
+        "type": {
+          "name": "symbol"
+        },
+        "required": false,
+        "description": ""
+      },
+      "optionalNode": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types."
+      },
+      "optionalElement": {
+        "type": {
+          "name": "element"
+        },
+        "required": false,
+        "description": "A React element."
+      },
+      "optionalMessage": {
+        "type": {
+          "name": "instanceOf",
+          "value": "Promise"
+        },
+        "required": false,
+        "description": "You can also declare that a prop is an instance of a class. This uses JS's instanceof operator."
+      },
+      "optionalEnum": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'News'",
+              "computed": false
+            },
+            {
+              "value": "'Photos'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "You can ensure that your prop is limited to specific values by treating it as an enum."
+      },
+      "optionalUnion": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "instanceOf",
+              "value": "Promise"
+            }
+          ]
+        },
+        "required": false,
+        "description": "An object that could be one of many types"
+      },
+      "optionalArrayOf": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "An array of a certain type"
+      },
+      "optionalObjectOf": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "An object with property values of a certain type"
+      },
+      "optionalObjectWithShape": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "color": {
+              "name": "string",
+              "required": false
+            },
+            "fontSize": {
+              "name": "number",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "An object taking on a particular shape"
+      },
+      "requiredFunc": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": "You can chain any of the above with `isRequired` to make sure a warning is shown if the prop isn't provided."
+      },
+      "requiredAny": {
+        "type": {
+          "name": "any"
+        },
+        "required": true,
+        "description": "A value of any data type"
+      },
+      "customProp": {
+        "type": {
+          "name": "custom",
+          "raw": "function (props, propName, componentName) {\n  if (!/matchme/.test(props[propName])) {\n    return new Error(\n      `Invalid prop '${propName}' supplied to '${componentName}'. Validation failed.`\n    )\n  }\n}"
+        },
+        "required": false,
+        "description": ""
+      },
+      "customArrayProp": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "custom",
+            "raw": "function (propValue, key, componentName, location, propFullName) {\n  if (!/matchme/.test(propValue[key])) {\n    return new Error(\n      `Invalid prop '${propFullName}' supplied to '${componentName}'. Validation failed.`\n    )\n  }\n}"
+          }
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+]
