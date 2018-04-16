@@ -19,7 +19,7 @@ Property | Type | Default value | Description
 `optionalEnum`|&#x27;News&#x27; \| &#x27;Photos&#x27;||You can ensure that your prop is limited to specific values by treating it as an enum.
 `optionalUnion`|string \| number \| Promise||An object that could be one of many types
 `optionalArrayOf`|&lt;number&gt;[]||An array of a certain type
-`optionalObjectOf`|objectOf||An object with property values of a certain type
+`optionalObjectOf`|{ [key]: &lt;number&gt; }||An object with property values of a certain type
 `optionalObjectWithShape`|{ color: string, fontSize: number }||An object taking on a particular shape
 `requiredFunc`|func|_required_|You can chain any of the above with &#x60;isRequired&#x60; to make sure a warning is shown if the prop isn&#x27;t provided.
 `requiredAny`|any|_required_|A value of any data type

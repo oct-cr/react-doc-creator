@@ -11,6 +11,11 @@ describe('propParsers', () => {
     assert.equal(result, '\'News\' \\| \'Photos\'')
   })
 
+  it('objectOf', () => {
+    const result = propParsers.objectOf(componentMockProps.optionalObjectOf.type.value)
+    assert.equal(result, '{ [key]: <number> }')
+  })
+
   it('union', () => {
     const result = propParsers.union(componentMockProps.optionalUnion.type.value)
     assert.equal(result, 'string \\| number \\| Promise')
