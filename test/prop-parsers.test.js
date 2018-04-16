@@ -16,4 +16,9 @@ describe('propParsers', () => {
     assert.equal(result, 'string \\| number \\| Promise')
   })
 
+  it('shape', () => {
+    const result = propParsers.shape(componentMockProps.optionalObjectWithShape.type.value)
+    assert.equal(result, '{ color: string, fontSize: number }')
+  })
+
 })

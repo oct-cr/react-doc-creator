@@ -20,7 +20,7 @@ Property | Type | Default value | Description
 `optionalUnion`|string \| number \| Promise||An object that could be one of many types
 `optionalArrayOf`|&lt;number&gt;[]||An array of a certain type
 `optionalObjectOf`|objectOf||An object with property values of a certain type
-`optionalObjectWithShape`|shape||An object taking on a particular shape
+`optionalObjectWithShape`|{ color: string, fontSize: number }||An object taking on a particular shape
 `requiredFunc`|func|_required_|You can chain any of the above with &#x60;isRequired&#x60; to make sure a warning is shown if the prop isn&#x27;t provided.
 `requiredAny`|any|_required_|A value of any data type
 `customProp`|custom||
@@ -30,4 +30,4 @@ Property | Type | Default value | Description
 
 -----
 
-<sub>Documentation generated using **React Doc Creator v0.0.7**</sub>
+<sub>Documentation generated using **React Doc Creator v0.0.8**</sub>
