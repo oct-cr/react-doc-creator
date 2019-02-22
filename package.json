@@ -28,16 +28,15 @@
     "components"
   ],
   "dependencies": {
-    "cli-table": "0.3.1",
-    "colors": "1.2.1",
-    "commander": "2.14.1",
-    "handlebars": "4.0.11",
-    "node-dir": "0.1.17",
-    "react-docgen": "2.20.1"
+    "cli-table": "^0.3",
+    "colors": "^1.3",
+    "commander": "^2.19",
+    "handlebars": "^4.1",
+    "node-dir": "^0.1",
+    "react-docgen": "^4.0"
   },
   "devDependencies": {
     "eslint": "4.19.0",
-    "jest-cli": "23.0.0-alpha.0",
-    "react": "16.2.0"
+    "jest-cli": "24.1.0"
   }
 }
