@@ -1,6 +1,6 @@
-Create documentation for your React projects in a easy way using regular PropTypes declarations.
+Create documentation for your React projects in an easy way using standard PropTypes declarations.
 
-Share the documentation in the project repository.
+Share the documentation in your project's repository.
 
 ## Demo
 
@@ -49,7 +49,7 @@ react-doc-creator [path] ...[options]
 
 ## Use Examples
 
-The options should be added to the `package.json` script.
+The options should be added to the corresponding `react-doc-creator` script in `package.json`.
 
 ### Exclude specific file
 `react-doc-creator src --exclude demo\.jsx`
