@@ -1,6 +1,6 @@
 {
   "name": "react-doc-creator",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Create documentation for your React projects in an easy way using standard PropTypes declarations.",
   "main": "lib/index.js",
   "bin": {
